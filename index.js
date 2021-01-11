@@ -5,7 +5,7 @@ var articleDescColor = ["#a88d6f","#f6f5f1","#9aa5a7","#f6f5f1"]
 var articleTitleColor = ["#9aa5a7","#000000","#a88d6f","#9aa5a7"]
 var column = document.querySelector(".column")
 for (let i = 0; i < 4; i++) {
-    column.innerHTML += '<div class="articles"><div class="article-container" style="background-color:'+articleDescColor[i]+';  ">Halo semua ada kontol disin</div><img src="'+articleImage[i]+'"><div class="article-title" style="background-color:'+articleTitleColor[i]+';"><p>'+articleTitle[i]+'</p></div></div>'    
+    column.innerHTML += '<div class="articles"><div class="article-container" style="background-color:'+articleDescColor[i]+';  ">'+articleDesc[i]+'</div><img src="'+articleImage[i]+'"><div class="article-title" style="background-color:'+articleTitleColor[i]+';"><p>'+articleTitle[i]+'</p></div></div>'    
 }
 
 window.addEventListener("scroll", function(){

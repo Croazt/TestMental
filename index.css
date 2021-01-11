@@ -124,7 +124,7 @@ body{
 
 .article .column{
     width: 100%;
-    padding: 22vh 13vh 22vh 13vh;
+    padding: 22vh 5vw 22vh 5vw;
     display: inline-flex;
     justify-content: space-between;
 }
@@ -135,7 +135,7 @@ body{
     display: flex;
     align-items: flex-end;
     justify-content: center;
-    width: 41vh;
+    width: 21vw;
     background-color: yellow;
     height: 60vh;
 }

@@ -54,7 +54,7 @@ body{
 .navbar.sticky{
     height: 4rem;
     transition: 0.5s;
-    background-color:rgba(51, 170, 51, .4);
+    background-color:#baa592;
 }
 
 

@@ -277,7 +277,7 @@ ul li.active a{
 }
 
 .container.active .links a{ 
-    animation: appear 0.5s forwards ease var(--i);
+    animation: appear 0.8s forwards ease var(--i);
 }
 
 @keyframes appear{

@@ -14,17 +14,18 @@ body{
 }
 
 .container{
-    max-height: 100vh;
+    max-height: 250vh;
     width: 100%;
-    background-color: #131414;
+    background-color: #fff;
     background-image: linear-gradient(135deg, #131414 0%, #000000 100%);
     transform-style: preserve-3d;
-    /* overflow: hidden; */
+    overflow: hidden;
 }
 
-.article{
-    height: 150vh;
+.container.active{
+    max-height: 100vh;
 }
+
 
 .navbar{
     transition: 0.5s;
@@ -111,6 +112,11 @@ body{
     overflow: hidden;
 }
 
+.article{
+    position: relative;
+    height: 150vh;
+}
+
 .main{
     position: relative;
     width: 100%;
@@ -172,9 +178,6 @@ header{
     cursor: pointer;
     text-decoration: none;
 }
-.container.active{
-    overflow: hidden;
-}
 
 .container.active .bar{
     transform: rotate(360deg);
@@ -189,8 +192,7 @@ header{
 }
 
 .container.active .main{
-    
-    animation: main-animation 0.5s ease; cursor: pointer;
+        animation: main-animation 0.5s ease; cursor: pointer;
     transform : perspective(1300px) rotateY(20deg) translateY(10px) translateZ(310px) scale(0.5)
 }
 

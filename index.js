@@ -10,6 +10,15 @@ for (let i = 0; i < 4; i++) {
     column.innerHTML += '<div class="articles"><div class="article-container" style="background-color:'+articleDescColor[i]+';color:'+articleDescFontColor[i]+';  ">'+articleDesc[i]+'</div><img src="'+articleImage[i]+'"><div class="article-title" style="background-color:'+articleTitleColor[i]+';color:'+articleTitleFontColor[i]+'; "><p>'+articleTitle[i]+'</p></div></div>'    
 }
 
+const overlay = document.querySelector(".overlay")
+overlay.addEventListener('click', function (e) {
+
+    e.preventDefault()
+    document.querySelector('.article').scrollIntoView({
+        behavior: 'smooth'
+    })
+})
+
 window.addEventListener("scroll", function(){
     var menu= document.querySelector(".navbar");
     menu.classList.toggle("sticky",window.scrollY > 0)

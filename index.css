@@ -54,7 +54,7 @@ body{
 .navbar.sticky{
     height: 4rem;
     transition: 0.5s;
-    background-color:#baa592;
+    background-color:#14274e;
 }
 
 
@@ -66,13 +66,13 @@ body{
     text-transform: uppercase;
     letter-spacing: 2px;
     line-height: 4rem;
-    margin-top: 20px;
+    margin-top: 5px;
 }
 
 .logo span{
     font-size: 1.8rem;
     margin-left: 5px;
-    color: #e20f2f;
+    color: #9ba4b4;
 }
 
 .hamburger-menu{
@@ -160,7 +160,7 @@ body{
     align-items: center;
     height: 4.5006663826107vh;
     width: 21vw;
-    color: #fff;
+    font-weight: 600;
 }
 .main{
     position: relative;

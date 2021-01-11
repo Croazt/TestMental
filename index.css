@@ -132,14 +132,36 @@ body{
 
 
 .column .articles{
-    display: flex;
-    align-items: flex-end;
-    justify-content: center;
+    display: inline-flex;
+    padding:0;
+    padding:0;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
     width: 21vw;
-    background-color: yellow;
     height: 60vh;
 }
 
+.articles img{
+    width: 21vw;
+    height: 25.4993336173893vh;
+}
+.article-container{
+    width: 21vw;
+    height: 30vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.articles .article-title{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 4.5006663826107vh;
+    width: 21vw;
+    color: #fff;
+}
 .main{
     position: relative;
     width: 100%;

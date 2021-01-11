@@ -1,3 +1,7 @@
+
+const articles = document.querySelectorAll(".articles")
+console.log(articles)
+
 window.addEventListener("scroll", function(){
     var menu= document.querySelector(".navbar");
     menu.classList.toggle("sticky",window.scrollY > 0)
@@ -10,5 +14,7 @@ const container = document.querySelector(".container")
 hamburger_menu.addEventListener("click", ()=>{
     container.classList.toggle("active")
 })
+
+
 
 

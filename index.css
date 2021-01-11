@@ -42,6 +42,7 @@ body{
     width: 100%;
     height: 100%;
     margin: 0 auto;
+    transition: 0.5s;
     padding: 0 2rem;
     display: flex;
     justify-content: space-between;
@@ -117,7 +118,26 @@ body{
 .article{
     position: relative;
     background-color: white;
-    height: 150vh;
+    height: 100vh;
+    width: 100%;
+}
+
+.article .column{
+    width: 100%;
+    padding: 22vh 13vh 22vh 13vh;
+    display: inline-flex;
+    justify-content: space-between;
+}
+
+
+
+.column .articles{
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    width: 41vh;
+    background-color: yellow;
+    height: 60vh;
 }
 
 .main{

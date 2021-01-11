@@ -2,6 +2,8 @@
     'https://fonts.googleapis.com/css2?family=Recursive:wght@400;500;600;700;800;900&display=swap'
 );
 
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
+
 *{
     padding: 0;
     margin: 0;
@@ -116,6 +118,7 @@ body{
 
 
 .article{
+    font-family:  'Poppins', sans-serif;
     position: relative;
     background-color: white;
     height: 100vh;
@@ -139,7 +142,7 @@ body{
     justify-content: flex-end;
     align-items: center;
     width: 21vw;
-    height: 60vh;
+    height: 65vh;
 }
 
 .articles img{
@@ -147,20 +150,24 @@ body{
     height: 25.4993336173893vh;
 }
 .article-container{
+    padding: 0 1.5vw 0 1.5vw;
+    text-align: center;
+    font-size: 1.5rem;
     width: 21vw;
-    height: 30vh;
+    height: 36vh;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 .articles .article-title{
     display: flex;
+    font-size: 0.9rem;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 4.5006663826107vh;
+    height: 3.5006663826107vh;
     width: 21vw;
-    font-weight: 600;
+    font-weight: 300;
 }
 .main{
     position: relative;
@@ -215,7 +222,7 @@ header{
 .btn{
     margin-top: 1rem;
     padding: 0.6rem 1.8rem;
-    background-color: #e20f2f;
+    background-color: #14274e;
     border: none;
     border-radius: 25px;
     color: #fff;
@@ -272,7 +279,7 @@ ul{
 }
 
 ul li.active a{ 
-    color: #e20f2f; 
+    color: #394867; 
 }
 
 .links a{

@@ -1,10 +1,10 @@
-var articleTitle = ["judul 1","judul 2","judul 3","judul 4"]
+var articleTitle = ["MATERI 1","MATERI 2","MATERI 3","MATERI 4"]
 var articleImage = ["images/215112.jpg","images/215112.jpg","images/215112.jpg","images/215112.jpg"]
-var articleDesc = ["INI DESKRIPSI SINGKAT ARTIKELNYA","INI DESKRIPSI SINGKAT ARTIKELNYA","INI DESKRIPSI SINGKAT ARTIKELNYA","INI DESKRIPSI SINGKAT ARTIKELNYA"]
+var articleDesc = ["INI JUDUL SANGAT SANGAT SINGKAT DARI ARTIKELNYA","INI JUDUL SANGAT SANGAT SINGKAT DARI ARTIKELNYA","INI JUDUL SANGAT SANGAT SINGKAT DARI ARTIKELNYA","INI JUDUL SANGAT SANGAT SINGKAT DARI ARTIKELNYA"]
 var articleDescColor = ["#394867","#f1f6f9","#9ba4b4","#f1f6f9"]
 var articleTitleColor = ["#9ba4b4","#000000","#394867","#9ba4b4"]
 var articleDescFontColor = ["#f1f6f9","#394867","#14274e","#394867",]
-var articleTitleFontColor = ["#394867","#f1f6f9","#f1f6f9","#394867",]
+var articleTitleFontColor = ["#f1f6f9","#f1f6f9","#f1f6f9","#f1f6f9",]
 var column = document.querySelector(".column")
 for (let i = 0; i < 4; i++) {
     column.innerHTML += '<div class="articles"><div class="article-container" style="background-color:'+articleDescColor[i]+';color:'+articleDescFontColor[i]+';  ">'+articleDesc[i]+'</div><img src="'+articleImage[i]+'"><div class="article-title" style="background-color:'+articleTitleColor[i]+';color:'+articleTitleFontColor[i]+'; "><p>'+articleTitle[i]+'</p></div></div>'    

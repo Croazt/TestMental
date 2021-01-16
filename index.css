@@ -18,7 +18,7 @@ body{
 }
 
 .container{
-    max-height: 250vh;
+    max-height: 300vh;
     width: 100%;
     background-color: #fff;
     background-image: #fff;
@@ -128,6 +128,15 @@ body{
     overflow: hidden;
 }
 
+
+.profile{
+    font-family:  'Poppins', sans-serif;
+    position: relative;
+    background-color:#f1f6f9;
+    height: 100vh;
+    width: 100%;
+    overflow: hidden;
+}
 .article .column{
     width: 100%;
     padding: 22vh 5vw 22vh 5vw;

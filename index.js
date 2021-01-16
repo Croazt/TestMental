@@ -24,6 +24,8 @@ window.addEventListener("scroll", function(){
     menu.classList.toggle("sticky",window.scrollY > 0)
 })
 
+
+
 const hamburger_menu = document.querySelector(".hamburger-menu");
 
 const container = document.querySelector(".container")

@@ -1,0 +1,444 @@
+@import url(
+    'https://fonts.googleapis.com/css2?family=Recursive:wght@400;500;600;700;800;900&display=swap'
+);
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html{scroll-behavior:smooth}
+
+body{
+    font-family: 'Recursive',sans-serif;
+    /* overflow: hidden; */
+}
+
+.container{
+    max-height: 300vh;
+    width: 100%;
+    background-color: #fff;
+    background-image: #fff;
+    transform-style: preserve-3d;
+    overflow: hidden;
+}
+
+.container.active{
+    max-height: 100vh;
+}
+
+
+.navbar{
+    transition: 0.5s;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 10;
+    height: 5rem;
+}
+
+.menu{
+    max-width: 72rem;
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+    transition: 0.5s;
+    padding: 0 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #fff;
+}
+
+
+.navbar.sticky{
+    height: 4rem;
+    transition: 0.5s;
+    background-color:#14274e;
+}
+
+.navbar.sticky .logo{
+    color: white;
+}
+
+.navbar.sticky .bar{
+    background-color: #eeeeee;
+}
+
+.navbar.sticky .bar::before{
+    background-color: #eee;
+}
+.navbar.sticky .bar::after{
+    background-color: #eee;
+}
+
+
+
+.logo{
+    transition: 0.5s;
+    font-size: 1.8rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: black;
+    letter-spacing: 2px;
+    line-height: 4rem;
+    margin-top: 5px;
+}
+
+.logo span{
+    font-size: 1.8rem;
+    margin-left: 5px;
+    color: #9ba4b4;
+}
+
+.hamburger-menu{
+    height: 4rem;
+    width: 3rem;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.bar{
+    width: 1.9rem;
+    height: 1.5px;
+    border-radius: 2px;
+    background-color:black;
+    transition: 0.5s;
+    position: relative;
+}
+
+.bar::before, .bar::after{
+    content: "";
+    position: absolute;
+    width: inherit;
+    height: inherit;
+    background-color: black;
+    transition: 0.5s;
+}
+
+.bar::before{
+    transform: translateY(-9px);
+}
+
+.bar::after{
+    transform: translateY(9px);
+}
+
+.main-container{
+    overflow: hidden;
+}
+
+
+
+.profile{
+    font-family:  'Poppins', sans-serif;
+    position: relative;
+    background-color:#f1f6f9;
+    height: 100vh;
+    width: 100%;
+    overflow: hidden;
+}
+
+.main{
+    position: relative;
+    width: 100%;
+    height: 150vh;
+    left: 0;
+    z-index: 5;
+    overflow: hidden;
+    transform-origin: left;
+    transform-style: preserve-3d;
+    transition: 0.5s;
+}
+
+header{
+    min-height: 100vh;
+    width: 100%;
+    background: url("images/215112.jpg") no-repeat top center / cover;
+    position: relative;
+}
+
+.overlay{
+    position: absolute;
+    width: 100%;
+    height: 150vh;
+    top: 0;
+    left: 0;
+    background-color: #f1f6f9;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    padding: 6vh 3vw 5vh 3vw;
+}
+
+.inner{
+    max-width: 35rem;
+    text-align: center;
+    color: #fff;
+    padding: 0 2rem;
+}
+
+.title{
+    font-size: 3rem;
+}
+
+.description{
+    margin: 10px 0; 
+    text-align: center; 
+    width: 50%;
+    font-size: 1.5rem;
+}
+
+
+.overlay .profile-card{
+    filter: drop-shadow(4px 4px 2px rgba(0,0,0,0.2));
+    display: flex;
+    justify-content: center;
+    width: 16vw;
+    height: 60vh;
+    /* background-color: yellow; */
+    margin: 7vh 2vw 0vh 2vw;
+}
+
+.profile-card .profile-photo-card{
+    justify-self: center;
+    justify-content: center;
+    display: flex;
+    width: 9.5vw;
+    height: 9.5vw;
+    border-radius: 100%;
+    background-color: white;
+}
+
+.profile-photo{
+    display: flex;
+    justify-content: center;
+    z-index: 1;
+    align-self: center;
+    width: 8.5vw;
+    height: 8.5vw;
+    border-radius: 100%;
+    background-color: white;
+}
+
+
+.profile-photo .photos{
+    z-index: 1;
+    align-self: center;
+    width: 8vw;
+    height: 8vw;
+    border-radius: 100%;
+    background-color: white;
+    background-size: cover;
+}
+
+.profile-card .profile-desc-card{
+    z-index: 0;
+    margin-top: 4.75vw ;
+    position: absolute;
+    width: 16vw;
+    height: 50.25vh;
+    border-radius: 40px 40px 20px 20px;
+    color: #14274e;
+    background-color: white;
+}
+
+.profile-desc-card .profile-name{
+    margin-top: 5vw;
+    width: 16vw;
+    height: 34.25vh;
+    text-align: center;
+    padding: 0px 1vw 0vw 1vw;
+    overflow: hidden;
+}
+
+
+.profile-name .name{
+    font-weight: 800;
+    font-size: 2.8vh;
+}
+
+.profile-name h5{
+    font-family:  'Poppins', sans-serif;
+    font-weight: 200;
+    font-size: 1.9vh;
+}
+
+.profile-name .quotes{
+    font-weight: 400;
+}
+
+
+.profile-desc-card .social-media-sec{
+    z-index: 0;
+    position: absolute;
+    bottom: 0;
+    vertical-align: bottom;
+    width: 16vw;
+    height: 6vh;
+    border-radius: 0% 0% 20px 20px;
+    background-color: #394867;
+}
+
+.container.active .bar{
+    transform: rotate(360deg);
+    background-color: transparent;
+}
+
+.container.active .main{
+    height: 100vh;
+}
+.container.active .bar::before{
+    background-color: #000000;
+    transform: translateY(0) rotate(45deg);
+}
+.container.active .bar::after{
+    background-color: #000000;
+    transform: translateY(0) rotate(-45deg);
+}
+
+.container.active .main{
+        animation: main-animation 0.5s ease; 
+        cursor: pointer;
+        transform : perspective(1300px) rotateY(20deg) translateY(10px) translateZ(310px) scale(0.5)
+}
+
+@keyframes main-animation{
+    
+    from{ transform: translate(0); }
+    to{
+        transform: perspective(1300px) rotateY(20deg) translateY(10px) 
+                    translateZ(310px) scale(0.5);
+    }
+}
+
+.links{ 
+    position: absolute; 
+    width: 30%; 
+    right: 0; 
+    top: 0; 
+    height: 100vh; 
+    z-index: 2; 
+    overflow: hidden;
+    display: flex; 
+    justify-content: 
+    flex-start; align-items: center;
+    margin-left: 10px;
+}
+
+ul{
+    list-style: none;
+}
+
+ul li.active a{ 
+    color: #394867; 
+}
+
+.links a{
+    text-decoration: none;
+    color: #000000;
+    padding: 0.7rem 0;
+    display: inline-block;
+    font-size: 1.8rem;
+    font-weight: 300;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transition: 0.3s;
+    opacity: 0;
+    transform: translateY(10px);
+    animation: hide 0.5s forwards ease;
+}
+
+
+.links a:hover{ color: #e20f2f; }
+
+.container.active .logo{
+    transition: 0.5s;
+    color: #000000;
+}
+
+.container.active .links a{ 
+    animation: appear 0.8s forwards ease var(--i);
+}
+
+@keyframes appear{
+    from { opacity: 0; transform: translateY(10px); }
+    to{ opacity: 1; transform: translateY(0px); }
+}
+
+@keyframes hides{
+    from { opacity: 1; transform: translateY(0px); }
+    to{ opacity: 0; transform: translateY(10px); }
+}
+
+.shadow{ 
+    position: absolute; 
+    width: 100%; 
+    height: 100vh; 
+    top: 0;
+    left: 0; 
+    transform-style: preserve-3d; 
+    transform-origin:left;
+    transition: 0.5s; background-color: #000000; }
+
+.shadow.one{ z-index: -1; opacity: 0.15; }
+
+.shadow.two{ z-index: -2; opacity: 0.1; }
+
+.container.active .shadow.one{
+    animation: shadow-one 0.6s ease-out;
+    transform: perspective(1300px) rotateY(20deg) translateY(10px) 
+                translateZ(215px) scale(0.5);
+}
+
+@keyframes shadow-one{
+    0%{
+        transform: translate(0);
+    }
+    5%{
+        transform: perspective(1300px) rotateY(20deg) translateY(10px) 
+                    translateZ(310px) scale(0.5);
+    }
+    100%{
+        transform: perspective(1300px) rotateY(20deg) translateY(10px) 
+                    translateZ(215px) scale(0.5);
+    }
+}
+
+
+.container.active .shadow.two{
+    animation: shadow-two 0.6s ease-out;
+    transform: perspective(1300px) rotateY(20deg) translateY(10px) 
+                translateZ(120px) scale(0.5);
+}
+
+@keyframes shadow-two{
+    0%{
+        transform: translate(0);
+    }
+    20%{
+        transform: perspective(1300px) rotateY(20deg) translateY(10px) 
+                    translateZ(310px) scale(0.5);
+    }
+    100%{
+        transform: perspective(1300px) rotateY(20deg) translateY(10px) 
+                    translateZ(120px) scale(0.5);
+    }
+}
+
+.container.active .main:hover + .shadow.one{
+    transform: perspective(1300px) rotateY(20deg) translateY(10px) 
+                translateZ(230px) scale(0.5);
+}
+.container.active .main:hover{
+    transform: perspective(1300px) rotateY(20deg) translateY(10px) 
+                translateZ(340px) scale(0.5);
+}

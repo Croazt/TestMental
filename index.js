@@ -113,3 +113,9 @@ function expandPanel(panel, height){
 //     icon.className = icon.className === 'fas fa-plus' ? 'fas fa-minus' : 'fas fa-plus';
 //     isi.style.height = isi.style.height === '0px' ? '220vh' : '0px';
 // })
+
+function generateLink() {
+    let message = document.form_main.message.value;
+    let url = "https://wa.me/";
+    window.location.href = `${url}6282259397631?text=${message}`;
+}

@@ -18,7 +18,7 @@ body{
 }
 
 .containers{
-    min-height: 400vh;
+    min-height: auto;
     width: 100%;
     background-color: #fff;
     background-image: #fff;
@@ -61,8 +61,6 @@ body{
     transition: 0.5s;
     background-color:#14274e;
 }
-
-
 
 .logo{
     transition: 0.5s;
@@ -124,13 +122,17 @@ body{
     font-family:  'Poppins', sans-serif;
     position: relative;
     background-color: white;
-    min-height: 100vh;
+    height: auto; 
     width: 100%;
     overflow: hidden;
 }
 
-
-
+.title-op{
+    color: #394867;
+    text-align: center; 
+    font-weight: 900; 
+    font-size: 3rem;
+}
 
 .article{
     padding: 50px 200px 0 200px;
@@ -287,13 +289,27 @@ body{
 }
 
 .profile .kelompok{
-    font-size: 4rem;
+    font-size: 3rem;
     font-weight: 900;
     position: relative;
     text-align: center;
     background-color:#f1f6f9;
     color: #14274e;
 }
+
+.jurusan{
+    margin-top: 2rem;
+    margin-bottom: 0;
+    font-size: 2.6rem;
+    font-weight: 500;
+}
+
+.kecil{
+    margin-bottom: 0;
+    font-size: 2.3rem;
+    font-weight: 200;
+}
+
 
 .button{
     margin-top: 100px;
@@ -528,6 +544,50 @@ ul li.active a{
                 translateZ(215px) scale(0.5);
 }
 
+
+
+.message-us{
+    background-color: #394867;
+    padding: 60px;
+    width:  100%;
+    height: 400px;
+    color: #f1f6f9;
+}
+.contact{
+    margin-top: 10px;
+    margin-bottom: 40px;
+    padding-left: 20px;
+    padding-right: 20px;
+    display: flex;
+    color: 14274e;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact h1{
+    width: 30%;
+    text-align: left;
+}
+
+
+.message-us  .form-main{
+    margin-left: 3vw;
+}
+
+.message-us textarea{
+    overflow:auto;
+    width: 50vw;
+    height: 160px;
+    padding: 12px 20px;
+    margin-left: 30px;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+
+
 @keyframes shadow-one{
     0%{
         transform: translate(0);
@@ -574,6 +634,10 @@ ul li.active a{
 
 
 @media screen and (max-width: 1331px) {
+    .title-op{
+        font-size: 2.8rem;
+    }
+    
     .btn{
         margin-top: 1rem;
         padding: 0.6rem 1.8rem;
@@ -601,6 +665,35 @@ ul li.active a{
 
 
 @media screen and (max-width: 1080px) {
+    .title-op{
+        font-size: 2.3rem;
+    }
+    
+.profile .perkenalan{
+    font-size: 2.5rem;
+
+}
+
+.profile .kelompok{
+    font-size: 2.5rem;
+}
+
+
+.jurusan{
+    font-size: 2.1rem;
+}
+
+.kecil{
+    font-size: 1.8rem;
+}
+
+.button{
+    font-size: 1.2rem;
+}
+    .message-us h1{
+        font-size: 2rem;
+    }
+
     .btn{
         font-size: 1rem;
         margin-top: 1rem;
@@ -629,6 +722,34 @@ ul li.active a{
 }
 
 @media screen and (max-width: 900px) {
+    .title-op{
+        font-size: 2rem;
+    }
+    .profile{
+        padding: 30px;
+    }
+    .profile .perkenalan{
+        font-size: 1.9rem;
+    
+    }
+    
+    .profile .kelompok{
+        font-size: 2.2rem;
+    }
+    .jurusan{
+        font-size: 1.8rem;
+    }
+    
+    .kecil{
+        font-size: 1.5rem;
+    }
+    
+    .button{
+        font-size: 1.2rem;
+    }
+        .message-us h1{
+            font-size: 1.6rem;
+        }
     .greeting{
         font-size: 1.6rem;
     }
@@ -644,6 +765,35 @@ ul li.active a{
 
 
 @media screen and (max-width: 750px) {
+    .title-op{
+        font-size: 1.6rem;
+    }
+    .profile{
+        padding: 30px 30px 60px 30px;
+    }
+    .profile .perkenalan{
+        font-size: 1.7rem;
+    
+    }
+    
+    .profile .kelompok{
+        font-size: 1.8rem;
+    }
+
+    .jurusan{
+        font-size: 1.5rem;
+    }
+    
+    .kecil{
+        font-size: 1.2rem;
+    }
+    
+    .button{
+        font-size: 1rem;
+    }
+        .message-us h1{
+            font-size: 1.3rem;
+        }
     .btn{
         font-size: 0.8rem;
         margin-top: 1rem;
@@ -672,6 +822,85 @@ ul li.active a{
 }
 
 @media screen and (max-width: 658px) {
+
+    .profile{
+        padding: 30px 30px 60px 30px;
+    }
+    .profile .perkenalan{
+        font-size: 1.5rem;
+    
+    }
+    
+    .profile .kelompok{
+        font-size: 1.6rem;
+    }
+
+    .jurusan{
+        font-size: 1.2rem;
+    }
+    
+    .kecil{
+        font-size: 1rem;
+    }
+    
+    .button{
+        font-size: 1rem;
+    }
+        .message-us h1{
+            font-size: 1rem;
+        }
+
+.logo{
+    transition: 0.5s;
+    font-size: 1.3rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    line-height: 4rem;
+    margin-top: 5px;
+}
+
+.logo span{
+    font-size: 1.3rem;
+    margin-left: 5px;
+    color: #9ba4b4;
+}
+
+
+.bar{
+    width: 1.4rem;
+    height: 1.5px;
+    border-radius: 2px;
+    background-color: #eeeeee;
+    transition: 0.5s;
+    position: relative;
+}
+
+.bar::before, .bar::after{
+    content: "";
+    position: absolute;
+    width: inherit;
+    height: inherit;
+    background-color: #eee;
+    transition: 0.5s;
+}
+
+.bar::before{
+    transform: translateY(-6px);
+}
+
+.bar::after{
+    transform: translateY(6px);
+}
+    .navbars{
+        height: 4rem;
+    }
+    
+    .navbars.sticky{
+        height: 3rem;
+        transition: 0.5s;
+        background-color:#14274e;
+    }
     .greeting{
         font-size: 1.2rem;
     }
@@ -699,6 +928,3 @@ ul li.active a{
         padding: 50px 40px 0 40px;
     }
 }
-
-
-  

@@ -156,13 +156,20 @@ body{
     background-color: #a8b2c470;
     text-align: justify;
     text-indent: 50px;
-    padding: 10px 25px 5px 55px;
-    transition: 0.5s;
+    transition: all 0.5s ease-in-out;
     padding: 0px 45px 0px 55px;
-    margin: 0px 0 15px 0;
+    margin: 0px 0 10px 0;
     overflow: hidden;
-    height: 0;
+    max-height: 0;
 }
+
+.article .isi.active{
+    max-height: 2060px;
+    margin: 0px 0 15px 0;
+    padding: 10px 45px 40px 55px;
+    transition: all 0.5s ease-in-out;
+}
+
 
 
 .article .closing{

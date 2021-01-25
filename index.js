@@ -43,40 +43,73 @@ hamburger_menu.addEventListener("click", ()=>{
     container.classList.toggle("active")
 })
 
-var isi;
-var icon;
 
-const pengertian = document.querySelector(".pengertian")
+const pengertian = document.querySelector('.pengertian')
 pengertian.querySelector(".topic").addEventListener("click",()=>{
-    isi =  pengertian.querySelector(".isi")
-    icon = pengertian.querySelector(".topic").querySelector('.fas.fa-plus') || pengertian.querySelector(".topic").querySelector('.fas.fa-minus');
-    icon.className = icon.className === 'fas fa-plus' ? 'fas fa-minus' : 'fas fa-plus';
-    isi.style.height = isi.style.height === '0px' ? '70vh' : '0px';
+    pengertian.querySelector('.isi').classList.toggle("active")
+    expandPanel(pengertian, '70vh')
 })
 
 const basedon = document.querySelector(".based-on")
 basedon.querySelector(".topic").addEventListener("click",()=>{
-    isi =  basedon.querySelector(".isi")
-    icon = basedon.querySelector(".topic").querySelector('.fas.fa-plus') || basedon.querySelector(".topic").querySelector('.fas.fa-minus');
-    icon.className = icon.className === 'fas fa-plus' ? 'fas fa-minus' : 'fas fa-plus';
-    isi.style.height = isi.style.height === '0px' ? '140vh' : '0px';
+    basedon.querySelector('.isi').classList.toggle("active")
+    expandPanel(basedon, '140vh')
 })
 
 const penyebab = document.querySelector(".penyebab")
 penyebab.querySelector(".topic").addEventListener("click",()=>{
-    isi =  penyebab.querySelector(".isi")
-    icon = penyebab.querySelector(".topic").querySelector('.fas.fa-plus') || penyebab.querySelector(".topic").querySelector('.fas.fa-minus');
-    icon.className = icon.className === 'fas fa-plus' ? 'fas fa-minus' : 'fas fa-plus';
-    isi.style.height = isi.style.height === '0px' ? '95vh' : '0px';
+    penyebab.querySelector('.isi').classList.toggle("active")
+    expandPanel(penyebab, 'vh')
 })
 
 const kesimpulan = document.querySelector(".kesimpulan")
-
 kesimpulan.querySelector(".topic").addEventListener("click",()=>{
-    isi =  kesimpulan.querySelector(".isi")
-    icon = kesimpulan.querySelector(".topic").querySelector('.fas.fa-plus') || kesimpulan.querySelector(".topic").querySelector('.fas.fa-minus');
-    icon.className = icon.className === 'fas fa-plus' ? 'fas fa-minus' : 'fas fa-plus';
-    isi.style.height = isi.style.height === '0px' ? '220vh' : '0px';
+    kesimpulan.querySelector('.isi').classList.toggle("active")
+    expandPanel(kesimpulan, '90vh')
 })
 
 
+function expandPanel(panel, height){
+    isi =  panel.querySelector(".isi")
+    icon = panel.querySelector(".topic").querySelector('.fas.fa-plus') || panel.querySelector(".topic").querySelector('.fas.fa-minus');
+    icon.className = icon.className === 'fas fa-plus' ? 'fas fa-minus' : 'fas fa-plus';
+    // if(icon.className === 'fas fa-minus'){
+    //     isi.style.maxHeight = "2060px";
+    // }else{
+    //     isi.style.maxHeight = "0px";
+    // }
+    
+    // isi.style.height = isi.style.height === '0px' ? 'auto' : '0px';
+}
+// const pengertian = document.querySelector(".pengertian")
+// pengertian.querySelector(".topic").addEventListener("click",()=>{
+//     isi =  pengertian.querySelector(".isi")
+//     icon = pengertian.querySelector(".topic").querySelector('.fas.fa-plus') || pengertian.querySelector(".topic").querySelector('.fas.fa-minus');
+//     icon.className = icon.className === 'fas fa-plus' ? 'fas fa-minus' : 'fas fa-plus';
+//     isi.style.height = isi.style.height === '0px' ? '70vh' : '0px';
+// })
+
+// const basedon = document.querySelector(".based-on")
+// basedon.querySelector(".topic").addEventListener("click",()=>{
+//     isi =  basedon.querySelector(".isi")
+//     icon = basedon.querySelector(".topic").querySelector('.fas.fa-plus') || basedon.querySelector(".topic").querySelector('.fas.fa-minus');
+//     icon.className = icon.className === 'fas fa-plus' ? 'fas fa-minus' : 'fas fa-plus';
+//     isi.style.height = isi.style.height === '0px' ? '140vh' : '0px';
+// })
+
+// const penyebab = document.querySelector(".penyebab")
+// penyebab.querySelector(".topic").addEventListener("click",()=>{
+//     isi =  penyebab.querySelector(".isi")
+//     icon = penyebab.querySelector(".topic").querySelector('.fas.fa-plus') || penyebab.querySelector(".topic").querySelector('.fas.fa-minus');
+//     icon.className = icon.className === 'fas fa-plus' ? 'fas fa-minus' : 'fas fa-plus';
+//     isi.style.height = isi.style.height === '0px' ? '95vh' : '0px';
+// })
+
+// const kesimpulan = document.querySelector(".kesimpulan")
+
+// kesimpulan.querySelector(".topic").addEventListener("click",()=>{
+//     isi =  kesimpulan.querySelector(".isi")
+//     icon = kesimpulan.querySelector(".topic").querySelector('.fas.fa-plus') || kesimpulan.querySelector(".topic").querySelector('.fas.fa-minus');
+//     icon.className = icon.className === 'fas fa-plus' ? 'fas fa-minus' : 'fas fa-plus';
+//     isi.style.height = isi.style.height === '0px' ? '220vh' : '0px';
+// })

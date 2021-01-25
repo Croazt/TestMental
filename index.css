@@ -582,13 +582,30 @@ ul li.active a{
     .contents{
         font-size: 1.3rem;
     }
-  }
+    .article{
+        padding: 50px 160px 0 160px;
+    }
+}
 
-  
+
 @media screen and (max-width: 1080px) {
     .greeting{
         font-size: 2rem;
     }
-  }
-  
+    
+}
+
+@media screen and (max-width: 900px) {
+    .article{
+        padding: 50px 120px 0 120px;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .article{
+        padding: 50px 40px 0 40px;
+    }
+}
+
+
   

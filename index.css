@@ -133,7 +133,7 @@ body{
 
 
 .article{
-    padding: 50px 60px 0 60px;
+    padding: 50px 200px 0 200px;
     font-size: 1.2rem;
 }
 .article-opening{
@@ -249,7 +249,8 @@ body{
     width: 40%;
     font-size: 3rem;
     font-weight: 900;
-    text-align: center;
+    text-align: left;
+    
 }
 
 .contents{

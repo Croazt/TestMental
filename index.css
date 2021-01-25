@@ -17,8 +17,8 @@ body{
     /* overflow: hidden; */
 }
 
-.container{
-    max-height: 300vh;
+.containers{
+    min-height: 400vh;
     width: 100%;
     background-color: #fff;
     background-image: #fff;
@@ -26,12 +26,13 @@ body{
     overflow: hidden;
 }
 
-.container.active{
+.containers.active{
+    min-height: 100vh;
     max-height: 100vh;
 }
 
 
-.navbar{
+.navbars{
     transition: 0.5s;
     position: fixed;
     top: 0;
@@ -55,7 +56,7 @@ body{
 }
 
 
-.navbar.sticky{
+.navbars.sticky{
     height: 4rem;
     transition: 0.5s;
     background-color:#14274e;
@@ -119,23 +120,146 @@ body{
 }
 
 
-.article{
+.article, .profile, .opening{
     font-family:  'Poppins', sans-serif;
     position: relative;
     background-color: white;
-    height: 100vh;
+    min-height: 100vh;
     width: 100%;
     overflow: hidden;
 }
 
+.article{
+    padding: 50px 60px 0 60px;
+    font-size: 1.2rem;
+}
+.article-opening{
+    text-indent : 50px;
+    font-size: 1.3rem;
+    text-align: justify;
+}
+
+.article .topic{
+    padding: 10px 20px 10px 20px;
+    display: flex;
+    font-weight: 500;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #a8b2c470;
+}
+
+
+.article .isi{
+    background-color: #a8b2c470;
+    text-align: justify;
+    text-indent: 50px;
+    padding: 10px 25px 5px 55px;
+    transition: 0.5s;
+    padding: 0px 45px 0px 55px;
+    margin: 0px 0 15px 0;
+    overflow: hidden;
+    height: 0;
+}
+
+
+.article .closing{
+    text-align: justify;
+    text-indent: 50px;
+}
+.isi .dialogue{
+    font-weight: 200;
+}
+
+
+
+.article .isi.active{
+    transition: 0.5s;
+    overflow: hidden;
+    bottom: auto;
+}
+
+
+.opening{
+    display: flex;
+    background-color:#f1f6f9;
+}
+
+.opening-image2{
+    border-radius: 40% 0 0 0;
+    margin-left: 40%;
+    position:absolute;
+    width: 60%;
+    height: 100vh;
+    background-color: #f1f6f9;
+    background-repeat: no-repeat, repeat;
+    background-size: cover;
+    background-position: center center;   
+}
+
+
+.opening-circle{
+    bottom: 0;
+    position:absolute;
+    width: 40vw;
+    height: 40vw;
+    border-radius: 100%;
+    background-color: #394867;
+    background-repeat: no-repeat, repeat;
+    background-size: cover;
+    background-position: center center;   
+}
+
+.opening-rect{
+    bottom: 0;
+    position:absolute;
+    width: 100vh;
+    height: 20vw;
+    margin-left: 20% ;
+    background-color:  #f1f6f9;
+    background-repeat: no-repeat, repeat;
+    background-size: cover;
+    background-position: center center;   
+}
+
+
+.opening-image{
+    position:absolute;
+    width: 100%;
+    height: 100vh;
+    border-radius: 0 0 40% 0;
+    background-color: #394867;
+    background-repeat: no-repeat, repeat;
+    background-size: cover;
+    background-position: center center;   
+}
+.opening-main{
+    z-index: 2;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 100vh; 
+    padding: 20px;
+}
+
+.greeting{
+    color: #f1f6f9;
+    width: 40%;
+    font-size: 3rem;
+    font-weight: 900;
+    text-align: center;
+}
+
+.contents{
+    padding: 20px;
+    width: 60%;
+    text-indent : 50px;
+    text-align: justify;
+    font-size: 1.5rem;
+}
+
 
 .profile{
-    font-family:  'Poppins', sans-serif;
-    position: relative;
     background-color:#f1f6f9;
-    height: 100vh;
-    width: 100%;
-    overflow: hidden;
 }
 .article .column{
     width: 100%;
@@ -243,21 +367,21 @@ header{
     text-decoration: none;
 }
 
-.container.active .bar{
+.containers.active .bar{
     transform: rotate(360deg);
     background-color: transparent;
 }
 
-.container.active .bar::before{
+.containers.active .bar::before{
     background-color: #000000;
     transform: translateY(0) rotate(45deg);
 }
-.container.active .bar::after{
+.containers.active .bar::after{
     background-color: #000000;
     transform: translateY(0) rotate(-45deg);
 }
 
-.container.active .main{
+.containers.active .main{
         animation: main-animation 0.5s ease; 
         cursor: pointer;
         transform : perspective(1300px) rotateY(20deg) translateY(10px) translateZ(310px) scale(0.5)
@@ -312,12 +436,12 @@ ul li.active a{
 
 .links a:hover{ color: #e20f2f; }
 
-.container.active .logo{
+.containers.active .logo{
     transition: 0.5s;
     color: #000000;
 }
 
-.container.active .links a{ 
+.containers.active .links a{ 
     animation: appear 0.8s forwards ease var(--i);
 }
 
@@ -345,7 +469,7 @@ ul li.active a{
 
 .shadow.two{ z-index: -2; opacity: 0.1; }
 
-.container.active .shadow.one{
+.containers.active .shadow.one{
     animation: shadow-one 0.6s ease-out;
     transform: perspective(1300px) rotateY(20deg) translateY(10px) 
                 translateZ(215px) scale(0.5);
@@ -366,7 +490,7 @@ ul li.active a{
 }
 
 
-.container.active .shadow.two{
+.containers.active .shadow.two{
     animation: shadow-two 0.6s ease-out;
     transform: perspective(1300px) rotateY(20deg) translateY(10px) 
                 translateZ(120px) scale(0.5);
@@ -386,11 +510,11 @@ ul li.active a{
     }
 }
 
-.container.active .main:hover + .shadow.one{
+.containers.active .main:hover + .shadow.one{
     transform: perspective(1300px) rotateY(20deg) translateY(10px) 
                 translateZ(230px) scale(0.5);
 }
-.container.active .main:hover{
+.containers.active .main:hover{
     transform: perspective(1300px) rotateY(20deg) translateY(10px) 
                 translateZ(340px) scale(0.5);
 }

@@ -129,6 +129,9 @@ body{
     overflow: hidden;
 }
 
+
+
+
 .article{
     padding: 50px 60px 0 60px;
     font-size: 1.2rem;
@@ -259,8 +262,51 @@ body{
 
 
 .profile{
+    padding: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     background-color:#f1f6f9;
+    color: #14274e;
 }
+
+.profile .perkenalan{
+    font-size: 3rem;
+    font-weight: 500;
+    position: relative;
+    text-align: center;
+    background-color:#f1f6f9;
+    color: #14274e;
+}
+
+.profile .kelompok{
+    font-size: 4rem;
+    font-weight: 900;
+    position: relative;
+    text-align: center;
+    background-color:#f1f6f9;
+    color: #14274e;
+}
+
+.button{
+    margin-top: 100px;
+    padding: 0.6rem 1.8rem;
+    background-color: #14274e;
+    border: none;
+    border-radius: 25px;
+    color: #fff;
+    text-transform: uppercase;
+    cursor: pointer;
+    text-decoration: none;
+    font-size: 1.5rem;
+}
+
+.button:hover{
+    text-decoration: none;
+    color: #fff;
+    background-color: #14274e80;
+}
+
 .article .column{
     width: 100%;
     padding: 22vh 5vw 22vh 5vw;

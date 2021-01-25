@@ -170,7 +170,10 @@ header{
     height: 150vh;
     top: 0;
     left: 0;
-    background-color: #f1f6f9;
+    /* background-color: #f1f6f9; */
+    background-image: url("../images/t.jpg");
+    background-position: center;
+    background-size: cover;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;

@@ -138,7 +138,6 @@ body{
 }
 .article-opening{
     text-indent : 50px;
-    font-size: 1.3rem;
     text-align: justify;
 }
 
@@ -592,16 +591,69 @@ ul li.active a{
     .greeting{
         font-size: 2rem;
     }
+    .contents{
+        font-size: 1.2rem;
+    }
+
+    .article{
+        font-size: 1rem;
+    }
     
 }
 
 @media screen and (max-width: 900px) {
+    .greeting{
+        font-size: 1.6rem;
+    }
+    .contents{
+        font-size: 1rem;
+    }
+
     .article{
+        font-size: 0.8rem;
         padding: 50px 120px 0 120px;
     }
 }
 
+
+@media screen and (max-width: 750px) {
+    .greeting{
+        font-size: 1.4rem;
+    }
+    .contents{
+        font-size: 0.9rem;
+    }
+
+    .article{
+        font-size: 0.7rem;
+        padding: 50px 70px 0 70px;
+    }
+}
+
+@media screen and (max-width: 658px) {
+    .greeting{
+        font-size: 1.2rem;
+    }
+}
+
+@media screen and (max-width: 556px) {
+    .greeting{
+        font-size: 1rem;
+    }
+}
 @media screen and (max-width: 400px) {
+
+    .greeting{
+        font-size: 0.8rem;
+    }
+    .contents{
+        font-size: 0.7rem;
+    }
+
+    .article{
+        font-size: 0.5rem;
+        padding: 50px 70px 0 70px;
+    }
     .article{
         padding: 50px 40px 0 40px;
     }

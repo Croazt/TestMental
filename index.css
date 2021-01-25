@@ -574,6 +574,19 @@ ul li.active a{
 
 
 @media screen and (max-width: 1331px) {
+    .btn{
+        margin-top: 1rem;
+        padding: 0.6rem 1.8rem;
+    }
+    .title{
+        font-size: 3rem;
+    }
+    
+    .description{
+        margin: 10px 0; 
+        width: 60%;
+        font-size: 1.5rem;
+    }
     .greeting{
         font-size: 2.2rem;
     }
@@ -588,6 +601,20 @@ ul li.active a{
 
 
 @media screen and (max-width: 1080px) {
+    .btn{
+        font-size: 1rem;
+        margin-top: 1rem;
+        padding: 0.6rem 1.5rem;
+    }
+    .title{
+        font-size: 2.7rem;
+    }
+    
+    .description{
+        margin: 10px 0; 
+        width: 70%;
+        font-size: 1.2rem;
+    }
     .greeting{
         font-size: 2rem;
     }
@@ -617,6 +644,20 @@ ul li.active a{
 
 
 @media screen and (max-width: 750px) {
+    .btn{
+        font-size: 0.8rem;
+        margin-top: 1rem;
+        padding: 0.6rem 1rem;
+    }
+    .title{
+        font-size: 2.5rem;
+    }
+    
+    .description{
+        margin: 10px 0; 
+        width: 80%;
+        font-size: 1rem;
+    }
     .greeting{
         font-size: 1.4rem;
     }

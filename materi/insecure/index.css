@@ -1,0 +1,822 @@
+@import url(
+    'https://fonts.googleapis.com/css2?family=Recursive:wght@400;500;600;700;800;900&display=swap'
+);
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html{scroll-behavior:smooth}
+
+body{
+    font-family: 'Recursive',sans-serif;
+    /* overflow: hidden; */
+}
+
+.containers{
+    min-height: auto;
+    width: 100%;
+    background-color: #fff;
+    background-image: #fff;
+    transform-style: preserve-3d;
+    overflow: hidden;
+}
+
+.containers.active{
+    min-height: 100vh;
+    max-height: 100vh;
+}
+
+.navbars{
+    transition: 0.5s;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 10;
+    height: 5rem;
+}
+
+.menu{
+    max-width: 72rem;
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+    transition: 0.5s;
+    padding: 0 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #fff;
+}
+
+
+.navbars.sticky{
+    height: 4rem;
+    transition: 0.5s;
+    background-color:#14274e;
+}
+
+.navbars.sticky .logo{
+    color: white;
+}
+
+.navbars.sticky .bar{
+    background-color: #eeeeee;
+}
+
+.navbars.sticky .bar::before{
+    background-color: #eee;
+}
+.navbars.sticky .bar::after{
+    background-color: #eee;
+}
+
+
+
+.logo{
+    transition: 0.5s;
+    font-size: 1.8rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: black;
+    letter-spacing: 2px;
+    line-height: 4rem;
+    margin-top: 5px;
+}
+
+.logo span{
+    font-size: 1.8rem;
+    margin-left: 5px;
+    color: #9ba4b4;
+}
+
+
+.hamburger-menu{
+    height: 4rem;
+    width: 3rem;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.bar{
+    width: 1.9rem;
+    height: 1.5px;
+    border-radius: 2px;
+    background-color:black;
+    transition: 0.5s;
+    position: relative;
+}
+
+.bar::before, .bar::after{
+    content: "";
+    position: absolute;
+    width: inherit;
+    height: inherit;
+    background-color: black;
+    transition: 0.5s;
+}
+
+.bar::before{
+    transform: translateY(-9px);
+}
+
+.bar::after{
+    transform: translateY(9px);
+}
+
+
+.main-container{
+    overflow: hidden;
+}
+
+.article, .profile{
+    font-family:  'Poppins', sans-serif;
+    position: relative;
+    background-color: white;
+    height: auto;
+    color: #394867;
+    width: 100%;
+    overflow: hidden;
+}
+
+.article-title{
+    margin-top: 3rem;
+    margin-bottom: 1vh;
+    font-size: 3rem;
+    font-weight: 900;
+    text-align: center;
+}
+
+.title-op{
+    color: #394867;
+    text-align: center; 
+    font-weight: 900; 
+    font-size: 3rem;
+}
+
+.article{
+    padding: 50px 200px 50px 200px;
+    font-size: 1.2rem;
+}
+.article-opening{
+    text-indent : 50px;
+    text-align: justify;
+}
+
+.article .topic{
+    padding: 10px 20px 10px 20px;
+    display: flex;
+    font-weight: 500;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #a8b2c470;
+}
+
+
+.article .isi{
+    background-color: #a8b2c470;
+    text-align: justify;
+    text-indent: 50px;
+    transition: all 0.5s ease-in-out;
+    padding: 0px 45px 0px 55px;
+    margin: 0px 0 10px 0;
+    overflow: hidden;
+    max-height: 0;
+}
+
+.article .isi.active{
+    max-height: 2060px;
+    margin: 0px 0 15px 0;
+    padding: 10px 45px 40px 55px;
+    transition: all 0.5s ease-in-out;
+}
+
+
+
+.article .closing{
+    text-align: justify;
+    text-indent: 50px;
+}
+.isi .dialogue{
+    font-weight: 200;
+}
+
+
+
+.article .isi.active{
+    transition: 0.5s;
+    overflow: hidden;
+    bottom: auto;
+}
+
+
+
+.button{
+    margin-top: 100px;
+    padding: 0.6rem 1.8rem;
+    background-color: #14274e;
+    border: none;
+    border-radius: 25px;
+    color: #fff;
+    text-transform: uppercase;
+    cursor: pointer;
+    text-decoration: none;
+    font-size: 1.5rem;
+}
+
+.button:hover{
+    text-decoration: none;
+    color: #fff;
+    background-color: #14274e80;
+}
+
+.article .column{
+    width: 100%;
+    padding: 22vh 5vw 22vh 5vw;
+    display: inline-flex;
+    justify-content: space-between;
+}
+
+
+
+.column .articles{
+    display: inline-flex;
+    padding:0;
+    padding:0;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    width: 21vw;
+    height: 65vh;
+}
+
+.articles img{
+    width: 21vw;
+    height: 25.4993336173893vh;
+}
+.article-container{
+    padding: 0 1.5vw 0 1.5vw;
+    text-align: center;
+    font-size: 1.5rem;
+    width: 21vw;
+    height: 36vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.articles .article-title{
+    display: flex;
+    font-size: 0.9rem;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 3.5006663826107vh;
+    width: 21vw;
+    font-weight: 300;
+}
+.main{
+    position: relative;
+    width: 100%;
+    left: 0;
+    z-index: 5;
+    overflow: hidden;
+    transform-origin: left;
+    transform-style: preserve-3d;
+    transition: 0.5s;
+}
+
+header{
+    min-height: auto;
+    width: 100%;
+    position: relative;
+}
+
+.containers.active header{
+    height: 100vh;
+}
+
+.overlay{
+    position: relative;
+    width: 100%;
+    min-height: auto;
+    top: 0;
+    left: 0;
+    background-color: #f1f6f9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: #fff;
+}
+
+.inner{
+    max-width: 35rem;
+    text-align: center;
+    color: #fff;
+    padding: 0 2rem;
+}
+
+.title{
+    font-size: 3rem;
+}
+
+.description{
+    margin: 10px 0; 
+    text-align: center; 
+    width: 50%;
+    font-size: 1.5rem;
+}
+
+.btn{
+    margin-top: 1rem;
+    padding: 0.6rem 1.8rem;
+    background-color: #14274e;
+    border: none;
+    border-radius: 25px;
+    color: #fff;
+    text-transform: uppercase;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.containers.active .bar{
+    transform: rotate(360deg);
+    background-color: transparent;
+}
+
+.containers.active .bar::before{
+    background-color: #000000;
+    transform: translateY(0) rotate(45deg);
+}
+.containers.active .bar::after{
+    background-color: #000000;
+    transform: translateY(0) rotate(-45deg);
+}
+
+.containers.active .main{
+        animation: main-animation 0.5s ease; 
+        cursor: pointer;
+        transform : perspective(1300px) rotateY(20deg) translateY(10px) translateZ(310px) scale(0.5)
+}
+
+@keyframes main-animation{
+    
+    from{ transform: translate(0); }
+    to{
+        transform: perspective(1300px) rotateY(20deg) translateY(10px) 
+                    translateZ(310px) scale(0.5);
+    }
+}
+
+.links{ 
+    position: absolute; 
+    width: 30%; 
+    right: 0; 
+    top: 0; 
+    height: 100vh; 
+    z-index: 2; 
+    overflow: hidden;
+    display: flex; 
+    justify-content: 
+    flex-start; align-items: center;
+    margin-left: 10px;
+}
+
+ul{
+    list-style: none;
+}
+
+ul li.active a{ 
+    color: #394867; 
+}
+
+.links a{
+    text-decoration: none;
+    color: #000000;
+    padding: 0.7rem 0;
+    display: inline-block;
+    font-size: 1.8rem;
+    font-weight: 300;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transition: 0.3s;
+    opacity: 0;
+    transform: translateY(10px);
+    animation: hide 0.5s forwards ease;
+}
+
+
+.links a:hover{ color: #e20f2f; }
+
+.containers.active .logo{
+    transition: 0.5s;
+    color: #000000;
+}
+
+.containers.active .links a{ 
+    animation: appear 0.8s forwards ease var(--i);
+}
+
+@keyframes appear{
+    from { opacity: 0; transform: translateY(10px); }
+    to{ opacity: 1; transform: translateY(0px); }
+}
+
+@keyframes hides{
+    from { opacity: 1; transform: translateY(0px); }
+    to{ opacity: 0; transform: translateY(10px); }
+}
+
+.shadow{ 
+    position: absolute; 
+    width: 100%; 
+    height: 100vh; 
+    top: 0;
+    left: 0; 
+    transform-style: preserve-3d; 
+    transform-origin:left;
+    transition: 0.5s; background-color: #000000; }
+
+.shadow.one{ z-index: -1; opacity: 0.15; }
+
+.shadow.two{ z-index: -2; opacity: 0.1; }
+
+.containers.active .shadow.one{
+    animation: shadow-one 0.6s ease-out;
+    transform: perspective(1300px) rotateY(20deg) translateY(10px) 
+                translateZ(215px) scale(0.5);
+}
+
+
+
+.message-us{
+    background-color: #394867;
+    padding: 60px;
+    width:  100%;
+    height: 400px;
+    color: #f1f6f9;
+}
+.contact{
+    margin-top: 10px;
+    margin-bottom: 40px;
+    padding-left: 20px;
+    padding-right: 20px;
+    display: flex;
+    color: 14274e;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact h1{
+    width: 30%;
+    text-align: left;
+}
+
+
+.message-us  .form-main{
+    margin-left: 3vw;
+}
+
+.message-us textarea{
+    overflow:auto;
+    width: 50vw;
+    height: 160px;
+    padding: 12px 20px;
+    margin-left: 30px;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+
+
+@keyframes shadow-one{
+    0%{
+        transform: translate(0);
+    }
+    5%{
+        transform: perspective(1300px) rotateY(20deg) translateY(10px) 
+                    translateZ(310px) scale(0.5);
+    }
+    100%{
+        transform: perspective(1300px) rotateY(20deg) translateY(10px) 
+                    translateZ(215px) scale(0.5);
+    }
+}
+
+
+.containers.active .shadow.two{
+    animation: shadow-two 0.6s ease-out;
+    transform: perspective(1300px) rotateY(20deg) translateY(10px) 
+                translateZ(120px) scale(0.5);
+}
+
+@keyframes shadow-two{
+    0%{
+        transform: translate(0);
+    }
+    20%{
+        transform: perspective(1300px) rotateY(20deg) translateY(10px) 
+                    translateZ(310px) scale(0.5);
+    }
+    100%{
+        transform: perspective(1300px) rotateY(20deg) translateY(10px) 
+                    translateZ(120px) scale(0.5);
+    }
+}
+
+.containers.active .main:hover + .shadow.one{
+    transform: perspective(1300px) rotateY(20deg) translateY(10px) 
+                translateZ(230px) scale(0.5);
+}
+.containers.active .main:hover{
+    transform: perspective(1300px) rotateY(20deg) translateY(10px) 
+                translateZ(340px) scale(0.5);
+}
+
+
+@media screen and (max-width: 1331px) {
+    .title-op{
+        font-size: 2.8rem;
+    }
+    
+    .btn{
+        margin-top: 1rem;
+        padding: 0.6rem 1.8rem;
+    }
+    .title{
+        font-size: 3rem;
+    }
+    
+    .description{
+        margin: 10px 0; 
+        width: 60%;
+        font-size: 1.5rem;
+    }
+    .greeting{
+        font-size: 2.2rem;
+    }
+    
+    .contents{
+        font-size: 1.3rem;
+    }
+}
+
+
+@media screen and (max-width: 1080px) {
+    .title-op{
+        font-size: 2.3rem;
+    }
+    
+.profile .perkenalan{
+    font-size: 2.5rem;
+
+}
+
+.profile .kelompok{
+    font-size: 2.5rem;
+}
+
+
+.jurusan{
+    font-size: 2.1rem;
+}
+
+.kecil{
+    font-size: 1.8rem;
+}
+
+.button{
+    font-size: 1.2rem;
+}
+    .message-us h1{
+        font-size: 2rem;
+    }
+
+    .btn{
+        font-size: 1rem;
+        margin-top: 1rem;
+        padding: 0.6rem 1.5rem;
+    }
+    .title{
+        font-size: 2.7rem;
+    }
+    
+    .description{
+        margin: 10px 0; 
+        width: 70%;
+        font-size: 1.2rem;
+    }
+    .greeting{
+        font-size: 2rem;
+    }
+    .contents{
+        font-size: 1.2rem;
+    }
+
+    .article{
+        font-size: 1rem;
+    }
+    
+}
+
+@media screen and (max-width: 900px) {
+    .title-op{
+        font-size: 2rem;
+    }
+    .profile{
+        padding: 30px;
+    }
+    .profile .perkenalan{
+        font-size: 1.9rem;
+    
+    }
+    
+    .profile .kelompok{
+        font-size: 2.2rem;
+    }
+    .jurusan{
+        font-size: 1.8rem;
+    }
+    
+    .kecil{
+        font-size: 1.5rem;
+    }
+    
+    .button{
+        font-size: 1.2rem;
+    }
+        .message-us h1{
+            font-size: 1.6rem;
+        }
+    .greeting{
+        font-size: 1.6rem;
+    }
+    .contents{
+        font-size: 1rem;
+    }
+
+}
+
+
+@media screen and (max-width: 750px) {
+    .title-op{
+        font-size: 1.6rem;
+    }
+    .profile{
+        padding: 30px 30px 60px 30px;
+    }
+    .profile .perkenalan{
+        font-size: 1.7rem;
+    
+    }
+    
+    .profile .kelompok{
+        font-size: 1.8rem;
+    }
+
+    .jurusan{
+        font-size: 1.5rem;
+    }
+    
+    .kecil{
+        font-size: 1.2rem;
+    }
+    
+    .button{
+        font-size: 1rem;
+    }
+        .message-us h1{
+            font-size: 1.3rem;
+        }
+    .btn{
+        font-size: 0.8rem;
+        margin-top: 1rem;
+        padding: 0.6rem 1rem;
+    }
+    .title{
+        font-size: 2.5rem;
+    }
+    
+    .description{
+        margin: 10px 0; 
+        width: 80%;
+        font-size: 1rem;
+    }
+    .greeting{
+        font-size: 1.4rem;
+    }
+    .contents{
+        font-size: 0.9rem;
+    }
+
+}
+
+@media screen and (max-width: 658px) {
+
+    .profile{
+        padding: 30px 30px 60px 30px;
+    }
+    .profile .perkenalan{
+        font-size: 1.5rem;
+    
+    }
+    
+    .profile .kelompok{
+        font-size: 1.6rem;
+    }
+
+    .jurusan{
+        font-size: 1.2rem;
+    }
+    
+    .kecil{
+        font-size: 1rem;
+    }
+    
+    .button{
+        font-size: 1rem;
+    }
+        .message-us h1{
+            font-size: 1rem;
+        }
+
+.logo{
+    transition: 0.5s;
+    font-size: 1.3rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    line-height: 4rem;
+    margin-top: 5px;
+}
+
+.logo span{
+    font-size: 1.3rem;
+    margin-left: 5px;
+    color: #9ba4b4;
+}
+
+
+.bar{
+    width: 1.4rem;
+    height: 1.5px;
+    border-radius: 2px;
+    background-color: #eeeeee;
+    transition: 0.5s;
+    position: relative;
+}
+
+.bar::before, .bar::after{
+    content: "";
+    position: absolute;
+    width: inherit;
+    height: inherit;
+    background-color: #eee;
+    transition: 0.5s;
+}
+
+.bar::before{
+    transform: translateY(-6px);
+}
+
+.bar::after{
+    transform: translateY(6px);
+}
+    .navbars{
+        height: 4rem;
+    }
+    
+    .navbars.sticky{
+        height: 3rem;
+        transition: 0.5s;
+        background-color:#14274e;
+    }
+    .greeting{
+        font-size: 1.2rem;
+    }
+}
+
+@media screen and (max-width: 556px) {
+    .greeting{
+        font-size: 1rem;
+    }
+}
+@media screen and (max-width: 400px) {
+
+    .greeting{
+        font-size: 0.8rem;
+    }
+    .contents{
+        font-size: 0.7rem;
+    }
+
+}

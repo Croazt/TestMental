@@ -184,12 +184,7 @@ header{
     padding: 6vh 3vw 5vh 3vw;
 }
 
-.title-op{
-    color: #14274e;
-    text-align: center; 
-    font-weight: 900; 
-    font-size: 40px;
-}
+
 
 @media screen and (max-width: 1920px) {
     .main{

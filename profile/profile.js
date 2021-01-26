@@ -9,7 +9,7 @@ let rows = ["background-image: url('../images/profileimg/20210113_210314.jpg')",
 ]
 
 let instagram =["assyadiva", "rafikaahmd",  "hanifah.fzh_",  "nblaasis_",  "faiqahabugar",  "nurrahmasss",  "is.azizahb"]
-let names =["Assyadiva Annisa","Rafika Ahmad","Hanifa Fauziah","Nabila Sri Rejeki A.","NURUL A. FAIQAH F. A.","Nur Rahma Sideng","Nurul Azizah B"]
+let names =["Assyadiva Annisa","Rafika Ahmad","Hanifa Fauziah","Nabila Sri Rejeki A.","Nurul A. Faiqah F. A.","Nur Rahma Sideng","Nurul Azizah B"]
 let NIM = ["42119004","42119017","42119006","42119014","42119015","42119023","42119016"]
 let quotes =["Self love isn’t selfish it’s important","Make happines a priority with yourself in the process","Dont stress everything will work out","Jika kau tak mampu terbang, larilah. Jika kau tak mampu berlari, berjalanlah. Jika kau tak mampu berjalan, merangkaklah. Bergerak maju dengan merangkak, setidaknya","Be yourself, and don't apologize","Don't be sorry for too long","You are capable of amazing things. Your feelings are valid. You deserves the love you keep trying to give everyone else. You are enough. Don't give up on yourself!"]
 var column = document.querySelector(".overlay")

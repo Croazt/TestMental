@@ -807,25 +807,38 @@ ul li.active a{
     .profile{
         padding: 30px;
     }
-    /* .profile .perkenalan{
-        font-size: 1.9rem;
     
+    .profile .perkenalan{
+        font-size: 3vw;
+        font-weight: 500;
+        position: relative;
+        text-align: center;
+        background-color:#f4eeed;
+        color: #79635a;
     }
     
     .profile .kelompok{
-        font-size: 2.2rem;
+        font-size: 3vw;
+        font-weight: 900;
+        position: relative;
+        text-align: center;
+        background-color:#f4eeed;
+        color: #79635a;
     }
+    
     .jurusan{
-        font-size: 1.8rem;
+        margin-top: 1rem;
+        margin-bottom: 0;
+        font-size: 2.6vw;
+        font-weight: 500;
     }
     
     .kecil{
-        font-size: 1.5rem;
-    } */
+        margin-bottom: 0;
+        font-size: 2.3vw;
+        font-weight: 200;
+    }
     
-    /* .button{
-        font-size: 1.2rem;
-    } */
         .message-us h1{
             font-size: 1.6rem;
         }

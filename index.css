@@ -912,26 +912,10 @@ ul li.active a{
     .profile{
         padding: 30px 30px 60px 30px;
     }
-    /* .profile .perkenalan{
-        font-size: 1.5rem;
     
-    }
-    
-    .profile .kelompok{
-        font-size: 1.6rem;
-    }
-
-    .jurusan{
-        font-size: 1.2rem;
-    }
-    
-    .kecil{
-        font-size: 1rem;
-    }
-     */
-    /* .button{
-        font-size: 1rem;
-    } */
+        .message-us h1{
+            font-size: 1.6rem;
+        }
         .message-us h1{
             font-size: 1rem;
         }

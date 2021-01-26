@@ -411,7 +411,7 @@ body{
 }
 
 .profile .perkenalan{
-    font-size: 3rem;
+    font-size: 2vw;
     font-weight: 500;
     position: relative;
     text-align: center;
@@ -420,7 +420,7 @@ body{
 }
 
 .profile .kelompok{
-    font-size: 3rem;
+    font-size: 2vw;
     font-weight: 900;
     position: relative;
     text-align: center;
@@ -429,15 +429,15 @@ body{
 }
 
 .jurusan{
-    margin-top: 2rem;
+    margin-top: 1rem;
     margin-bottom: 0;
-    font-size: 2.6rem;
+    font-size: 1.6vw;
     font-weight: 500;
 }
 
 .kecil{
     margin-bottom: 0;
-    font-size: 2.3rem;
+    font-size: 1.3vw;
     font-weight: 200;
 }
 
@@ -452,7 +452,7 @@ body{
     text-transform: uppercase;
     cursor: pointer;
     text-decoration: none;
-    font-size: 1.5rem;
+    font-size: 1.2vw;
 }
 
 .button:hover{
@@ -522,17 +522,7 @@ header{
     font-size: 1.5rem;
 }
 
-.btn{
-    margin-top: 1rem;
-    padding: 0.6rem 1.8rem;
-    background-color: #79635a;
-    border: none;
-    border-radius: 25px;
-    color: #fff;
-    text-transform: uppercase;
-    cursor: pointer;
-    text-decoration: none;
-}
+
 
 .containers.active .bar{
     transform: rotate(360deg);
@@ -552,6 +542,17 @@ header{
         animation: main-animation 0.5s ease; 
         cursor: pointer;
         transform : perspective(1300px) rotateY(20deg) translateY(10px) translateZ(310px) scale(0.5)
+}
+.btn{
+    margin-top: 1rem;
+    padding: 0.6rem 1.8rem;
+    background-color: #79635a;
+    border: none;
+    border-radius: 25px;
+    color: #fff;
+    text-transform: uppercase;
+    cursor: pointer;
+    text-decoration: none;
 }
 
 @keyframes main-animation{
@@ -765,27 +766,11 @@ ul li.active a{
         font-size: 2.3rem;
     }
     
-.profile .perkenalan{
+/* .profile .perkenalan{
     font-size: 2.5rem;
 
-}
+} */
 
-.profile .kelompok{
-    font-size: 2.5rem;
-}
-
-
-.jurusan{
-    font-size: 2.1rem;
-}
-
-.kecil{
-    font-size: 1.8rem;
-}
-
-.button{
-    font-size: 1.2rem;
-}
     .message-us h1{
         font-size: 2rem;
     }
@@ -822,7 +807,7 @@ ul li.active a{
     .profile{
         padding: 30px;
     }
-    .profile .perkenalan{
+    /* .profile .perkenalan{
         font-size: 1.9rem;
     
     }
@@ -836,11 +821,11 @@ ul li.active a{
     
     .kecil{
         font-size: 1.5rem;
-    }
+    } */
     
-    .button{
+    /* .button{
         font-size: 1.2rem;
-    }
+    } */
         .message-us h1{
             font-size: 1.6rem;
         }
@@ -862,7 +847,7 @@ ul li.active a{
     .profile{
         padding: 30px 30px 60px 30px;
     }
-    .profile .perkenalan{
+    /* .profile .perkenalan{
         font-size: 1.7rem;
     
     }
@@ -881,7 +866,7 @@ ul li.active a{
     
     .button{
         font-size: 1rem;
-    }
+    } */
         .message-us h1{
             font-size: 1.3rem;
         }
@@ -914,7 +899,7 @@ ul li.active a{
     .profile{
         padding: 30px 30px 60px 30px;
     }
-    .profile .perkenalan{
+    /* .profile .perkenalan{
         font-size: 1.5rem;
     
     }
@@ -930,10 +915,10 @@ ul li.active a{
     .kecil{
         font-size: 1rem;
     }
-    
-    .button{
+     */
+    /* .button{
         font-size: 1rem;
-    }
+    } */
         .message-us h1{
             font-size: 1rem;
         }

@@ -175,13 +175,11 @@ body{
     display: flex;
     font-weight: 500;
     justify-content: space-between;
-    align-items: center;
-    background-color: #efd9d188;
+    align-items: center;;
 }
 
 
 .article .isi{
-    background-color: #efd9d188;
     text-align: justify;
     text-indent: 50px;
     transition: all 0.5s ease-in-out;
@@ -190,6 +188,24 @@ body{
     overflow: hidden;
     max-height: 0;
 }
+
+.article .pengertian .topic , .article .pengertian .isi {
+    background-color: #DFE4DC;
+}
+
+.article .based-on .topic , .article .based-on .isi {
+    background-color: #EDCCB4;
+}
+
+.article .penyebab .topic , .article .penyebab .isi {
+    background-color: #E9DCD8;
+}
+
+.article .kesimpulan .topic , .article .kesimpulan .isi {
+    background-color: #DBE4B6;
+}
+
+
 
 .article .isi.active{
     max-height: 2060px;
@@ -290,6 +306,19 @@ body{
     transform-origin: left;
     transform-style: preserve-3d;
     transition: 0.5s;
+}
+
+.merah{
+    color: #ef4f4f;
+}
+.kuning{
+    color: #ffcda3;
+}
+.pink{
+    color: #ee9595;
+}
+.hijau{
+    color: #74c7b8;
 }
 
 header{

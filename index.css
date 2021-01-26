@@ -686,6 +686,7 @@ ul li.active a{
 .contact h1{
     width: 30%;
     text-align: left;
+    font-size: 3vw;
 }
 
 
@@ -696,7 +697,7 @@ ul li.active a{
 .message-us textarea{
     overflow:auto;
     width: 50vw;
-    height: auto;
+    height: 50%;
     padding: 12px 20px;
     margin-left: 30px;
     display: inline-block;
@@ -791,10 +792,6 @@ ul li.active a{
 
 } */
 
-    .message-us h1{
-        font-size: 2rem;
-    }
-
     .btn{
         font-size: 1rem;
         margin-top: 1rem;
@@ -860,7 +857,7 @@ ul li.active a{
     }
     
         .message-us h1{
-            font-size: 1.6rem;
+            font-size: 3.4vw;
         }
     .greeting{
         font-size: 1.6rem;
@@ -900,9 +897,7 @@ ul li.active a{
     .button{
         font-size: 1rem;
     } */
-        .message-us h1{
-            font-size: 1.3rem;
-        }
+
     .btn{
         font-size: 0.8rem;
         margin-top: 1rem;
@@ -933,12 +928,6 @@ ul li.active a{
         padding: 30px 30px 60px 30px;
     }
     
-        .message-us h1{
-            font-size: 1.6rem;
-        }
-        .message-us h1{
-            font-size: 1rem;
-        }
 
 .logo{
     transition: 0.5s;

@@ -1,14 +1,5 @@
 
 
-const overlay = document.querySelector(".overlay")
-overlay.addEventListener('click', function (e) {
-
-    e.preventDefault()
-    document.querySelector('.opening').scrollIntoView({
-        behavior: 'smooth'
-    })
-})
-
 const button = document.querySelector(".btn")
 button.addEventListener('click', function (e) {
 

@@ -318,7 +318,8 @@ body{
     overflow: hidden;
 	display:flex;
 	margin: auto;
-	padding: 2px;
+    padding: 2px;
+    
 }
 
 .title-op{

@@ -302,7 +302,6 @@ body{
     overflow: hidden;
 }
 
-
 .article, .profile, .opening{
     font-family:  'Poppins', sans-serif;
     position: relative;
@@ -310,6 +309,15 @@ body{
     height: auto; 
     width: 100%;
     overflow: hidden;
+}
+
+.something{
+	font-family:  'Poppins', sans-serif; 	
+    width: 100%;
+    overflow: hidden;
+	display:flex;
+	margin: auto;
+	padding: 10px;
 }
 
 .title-op{

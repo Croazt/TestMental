@@ -213,6 +213,13 @@ body{
   }
 }
 
+.container {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    padding-top: 45%;/* 16:9 Aspect Ratio (divide 9 by 16 = 0.5625) */
+  }
+
 .containers{
     min-height: auto;
     width: 100%;

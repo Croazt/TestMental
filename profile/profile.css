@@ -177,7 +177,7 @@ body{
 }
 
 .button{
-    margin: 10px;
+    margin: 1em;
     font: 'Poppins';
     padding: 0.6rem 1.8rem;
     background-color: #79635a;
@@ -215,7 +215,7 @@ header{
     /* background-color: #f1f6f9; */
     background-image: url("../images/tes.jpg");
     background-position: center;
-    background-size: cover;
+    background-size:auto;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;

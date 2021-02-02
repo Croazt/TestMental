@@ -164,7 +164,18 @@ body{
     overflow: hidden;
 	margin: 3em;
 	padding: 10px;
-	text-align: center; 
+    text-align: center; 
+    position: relative;
+    height: auto;
+    width: 100%;
+    top: 0;
+    left: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    padding: 6vh 3vw 5vh 3vw;
 }
 
 .button{
@@ -179,6 +190,7 @@ body{
     cursor: pointer;
     text-decoration: none;
     font-size: 1.2vw;
+    margin-bottom: 2em;
 }
 
 .button:hover{

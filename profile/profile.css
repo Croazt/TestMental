@@ -160,10 +160,8 @@ body{
 
 .footer{
 	font-family:  'Poppins', sans-serif; 	
-    width: 100%;
     overflow: hidden;
-	margin: 3em;
-	padding: 10px;
+	margin: 2em;
     text-align: center; 
     position: relative;
     height: auto;
@@ -174,7 +172,7 @@ body{
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    color: #fff;
+    font-size: medium;
     padding: 6vh 3vw 5vh 3vw;
 }
 

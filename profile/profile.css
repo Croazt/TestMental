@@ -215,7 +215,7 @@ header{
     /* background-color: #f1f6f9; */
     background-image: url("../images/tes.jpg");
     background-position: center;
-    background-size:auto;
+    background-size: cover;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;

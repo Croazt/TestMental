@@ -160,24 +160,24 @@ body{
 
 .footer{
 	font-family:  'Poppins', sans-serif; 	
+    width: 100%;
     overflow: hidden;
 	margin: 2em;
     text-align: center; 
     position: relative;
     height: auto;
-    width: 100%;
     top: 0;
     left: 0;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    font-size: medium;
+    color: #000100;
     padding: 6vh 3vw 5vh 3vw;
 }
 
 .button{
-    margin-top: 20px;
+    margin: 10px;
     font: 'Poppins';
     padding: 0.6rem 1.8rem;
     background-color: #79635a;
@@ -188,7 +188,6 @@ body{
     cursor: pointer;
     text-decoration: none;
     font-size: 1.2vw;
-    margin-bottom: 2em;
 }
 
 .button:hover{

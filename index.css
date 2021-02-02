@@ -313,13 +313,12 @@ body{
 }
 
 .separateColomn{
-	font-family:  'Poppins', sans-serif; 	
+    font-family:  'Poppins', sans-serif; 	
     width: 100%;
-    overflow: hidden;
 	display:flex;
 	margin: auto;
-    padding: 2px;
-    
+	padding: 2px;
+	overflow-y: auto;
 }
 
 .title-op{

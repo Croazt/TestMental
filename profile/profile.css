@@ -173,11 +173,10 @@ body{
     justify-content: center;
     align-items: center;
     color: #000100;
-    padding: 6vh 3vw 5vh 3vw;
 }
 
 .button{
-    margin: 1em;
+    margin: 2em;
     font: 'Poppins';
     padding: 0.6rem 1.8rem;
     background-color: #79635a;
